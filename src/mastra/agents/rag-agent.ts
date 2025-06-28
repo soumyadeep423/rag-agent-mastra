@@ -23,7 +23,7 @@ export const ragAgent = new Agent({
                 Berkshire Hathaway shareholder letters.
                 Use the provided vector query tool to find relevant information from your knowledge base, 
                 and provide accurate, well-supported answers based on the retrieved content.
-                Also specify clearly which letter you have referred to generate the output `,
+                Also specify clearly which letter you have referred to generate the output  Please user the vector query tool and give the citations`,
     model: openai("gpt-4o"),
     tools: {
         vectorQueryTool,
