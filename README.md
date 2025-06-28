@@ -1,7 +1,3 @@
-Here's a clean, structured **README.md** for your project based on the provided files and directory structure:
-
----
-
 # 📝 Berkshire Hathaway RAG Agent with Mastra
 
 This project implements a Retrieval-Augmented Generation (RAG) Agent using [Mastra](https://mastra.ai/) to analyze Warren Buffett's investment philosophy from Berkshire Hathaway shareholder letters.
