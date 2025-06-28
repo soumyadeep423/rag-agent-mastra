@@ -17,7 +17,7 @@ function ask(prompt) {
 async function chatLoop() {
   const agent = client.getAgent("ragAgent"); // your agent ID
 
-  console.log("=== Berkshire Hathaway RAG Chat CLI ===");
+  console.log("=== Berkshire Hathaway RAG Chat ===");
   console.log("Type your question, or 'exit' to quit.");
 
   while (true) {
@@ -31,7 +31,7 @@ async function chatLoop() {
 
     console.log("AI:");
     response.processDataStream({
-      onTextPart: text => process.stdout.write(text),
+      onTextPart: (text) => {process.stdout.write(text)},
       onErrorPart: err => console.error("Stream error:", err),
     });
     console.log("\n");
